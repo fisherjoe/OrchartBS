@@ -1,0 +1,87 @@
+.org_node_c{width:180px; height:90px; margin:0 auto;padding:10px;border-radius:5px;font:12px/14px Verdana,'微软雅黑','宋体',sans-serif}
+.org_node_c .img_nci img{width:50px;height:50px;border:none}
+.org_node_c_inner{width:176px;height:86px;overflow:hidden;border-radius:5px;
+
+	border:2px solid #2599e2;
+    background:#64c0f1; /* 一些不支持背景渐变的浏览器 */
+    background:-moz-linear-gradient(top, #64c0f1, #2599e2);
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#64c0f1), to(#2599e2));
+    background:-o-linear-gradient(top, #64c0f1, #2599e2);
+}
+.over_org_nci{
+	border:2px solid #7ccff1;
+    background:#d7fefd; /* 一些不支持背景渐变的浏览器 */
+    background:-moz-linear-gradient(top, #d7fefd, #7fc6f0);
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#d7fefd), to(#7fc6f0));
+    background:-o-linear-gradient(top, #d7fefd, #7fc6f0);
+}
+.info_nci{padding:5px}
+.info_nci a{text-decoration:none;cursor:pointer}
+.img_nci{float:left;display:inline}
+.detail_nci{float:left;display:inline;margin-left:10px}
+.detail_nci span{display:block;padding:2px 0;color:#333}
+.ops_nci{padding:0 5px 5px 5px;text-align:right;}
+.ops_nci .fold_nci, .ops_nci .showall_nci{display:none}
+.ops_nci a{font-size:12px;color:#eee;cursor:pointer}
+.main_name_nci{height:100%;text-align:center;}
+.main_name_nci a{text-decoration:none;font-size:12px;color:#eee}
+.main_name_nci td{width:100%;height:100%}
+
+.small_ort_nci{width:90px; height:45px;}
+.small_ort_nci .img_nci img{width:50px;height:50px;}
+.small_ort_nci .org_node_c_inner{width:86px;height:41px;}
+
+.nobackground{background:none !important}
+
+@-webkit-keyframes flashborder {
+	0% {
+		border-color: #e35b1d;
+	}
+	20% {
+		border-color: #fff;
+	}
+	40% {
+		border-color: #e35b1d;
+	}
+	60% {
+		border-color: #fff;
+	}
+	80% {
+		border-color: #e35b1d;
+	}
+	90% {
+		border-color: #fff;
+	}
+	100% {
+		border-color: #e35b1d;
+	}
+}
+@-moz-keyframes flashborder{  
+	0% {
+		border-color: #e35b1d;
+	}
+	20% {
+		border-color: #fff;
+	}
+	40% {
+		border-color: #e35b1d;
+	}
+	60% {
+		border-color: #fff;
+	}
+	80% {
+		border-color: #e35b1d;
+	}
+	90% {
+		border-color: #fff;
+	}
+	100% {
+		border-color: #e35b1d;
+	}
+}  
+
+.org_flashborder {
+	border-color: #e35b1d;
+    -moz-animation:flashborder 3s infinite;  
+    -webkit-animation:flashborder 3s linear 1;  
+}

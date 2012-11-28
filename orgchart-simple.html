@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<script src="jquery-1.6.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+<style type="text/css">
+.box_org_tree{height:400px;overflow:hidden;}
+.box_org_tree .org_td{vertical-align:top}
+
+.box_org_tree .org_node_c{width:60px; height:60px; margin:0 auto;padding:10px;border-radius:5px}
+.box_org_tree .org_node_c .img_corg img{width:50px;height:50px;border:none}
+.box_org_tree .org_node_c_inner{width:50px;height:50px;overflow:hidden;border:5px solid #eee;border-radius:5px}
+
+.box_org_tree .org_line_bm{background:url(img/m.png) no-repeat bottom center;-background-image:url(img/ie6/m.gif)}
+.box_org_tree .org_line_tm{background:url(img/m.png) no-repeat top center;-background-image:url(img/ie6/m.gif)}
+.box_org_tree .org_line_lr{background:url(img/lr.png) no-repeat top center;-background-image:url(img/ie6/lr.gif)}
+.box_org_tree .org_line_l{background:url(img/l.png) no-repeat top center;-background-image:url(img/ie6/l.gif)}
+.box_org_tree .org_line_r{background:url(img/r.png) no-repeat top center;-background-image:url(img/ie6/r.gif)}
+
+.clearfix:after{content:".";height:0;display:block;visibility:hidden;clear:both}
+.clearfix{zoom:1}
+.box_org_three{width:800px;overflow:hidden}
+.box_org_three .org_node_c{width:60px; height:60px;padding:10px;margin:0;border-radius:5px}
+.box_org_three .org_node_c .img_corg img{width:50px;height:50px;border:none}
+.box_org_three .org_node_c_inner{width:50px;height:50px;overflow:hidden;border:5px solid #eee;border-radius:5px}
+
+</style>
+
+<div id="box_org_tree" class="box_org_tree"></div>
+
+<script src="bs.orgchart-1.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var data = [
+	{"id":12, "pid":3, "logo":"logo/7.jpg", "name":"张湛忻"},
+	{"id":13, "pid":3, "logo":"logo/8.jpg", "name":"张和栩"},
+	{"id":7, "pid":12, "logo":"logo/9.jpg", "name":"张妤嫒"}, 
+	{"id":5, "pid":2, "logo":"logo/4.jpg", "name":"张梦琪"}, 
+	{"id":9, "pid":2, "logo":"logo/6.jpg", "name":"张三"},		
+	{"id":1, "pid":0, "logo":"logo/1.jpg", "name":"张璟熙"},
+	{"id":2, "pid":1, "logo":"logo/2.jpg", "name":"张乔斯"}, 
+	{"id":8, "pid":5, "logo":"logo/3.jpg", "name":"张紫萱"},		
+	{"id":3, "pid":1, "logo":"logo/3.jpg", "name":"相札"},
+	{"id":6, "pid":2, "logo":"logo/5.jpg", "name":"马延行"}, 	
+	{"id":11, "pid":6, "logo":"logo/5.jpg", "name":"张三"},
+	{"id":14, "pid":13, "logo":"logo/5.jpg", "name":"马*泽"},
+	{"id":15, "pid":13, "logo":"logo/5.jpg", "name":"马证强"},
+	{"id":16, "pid":1, "logo":"logo/13.jpg", "name":"杨伟雪"},
+	{"id":17, "pid":1, "logo":"logo/3.jpg", "name":"杨 蓉倚"},
+	{"id":18, "pid":22, "logo":"logo/3.jpg", "name":"张三"},
+	{"id":19, "pid":21, "logo":"logo/3.jpg", "name":"杨凯瞎"},
+	{"id":20, "pid":22, "logo":"logo/3.jpg", "name":"张三"},
+	{"id":21, "pid":16, "logo":"logo/3.jpg", "name":"张三"},
+	{"id":22, "pid":17, "logo":"logo/10.jpg", "name":"杨亮哲"},
+	{"id":23, "pid":18, "logo":"logo/3.jpg", "name":"张三"},
+	{"id":24, "pid":1, "logo":"logo/3.jpg", "name":"马苏拉"},
+	{"id":25, "pid":1, "logo":"logo/3.jpg", "name":"杨蓉倚"},
+	{"id":26, "pid":1, "logo":"logo/3.jpg", "name":"张三"},
+	{"id":27, "pid":1, "logo":"logo/3.jpg", "name":"杨税当"},
+	{"id":28, "pid":1, "logo":"logo/3.jpg", "name":"张三"}
+];
+
+$(function(){
+	window.CO = new CreateOrgchartBS({
+		"data":data, 		
+		"wrap":$("#box_org_tree")
+	});
+	window.CO.init();
+});
+
+</script>
+
+</body>
+</html>
